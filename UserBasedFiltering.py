@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Assignment 3
-"""
 
 import math
 
@@ -92,18 +88,7 @@ class UserBasedFilteringRecommender:
     #################################################
     # make recommendations for userX from the most similar k nearest neigibors (NNs)
     def recommendKNN(self, userX):
-        
-        # YOUR CODE HERE
-        
-        # for given userX, get the sorted list of users - by most similar to least similar        
-        
-        # calcualte the weighted average item recommendations for userX from userX's k NNs
-        
-        # return sorted list of recommendations (sorted highest to lowest ratings)
-        # example: [('Broken Bells', 2.64), ('Vampire Weekend', 2.2), ('Deadmau5', 1.71)]
-        
-        # once you are done coding this method, delete the pass statement below
-         #Initializing a list to capture nearest neighbours and their distances to userX
+             #Initializing a list to capture nearest neighbours and their distances to userX
         distance=[]
         
         for user in self.usersItemRatings.keys():
