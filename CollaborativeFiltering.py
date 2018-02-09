@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Assignment 3
-"""
 
 print ()
 
@@ -24,12 +20,10 @@ songData = {"Angelica": {"Blues Traveler": 3.5, "Broken Bells": 2.0, "Norah Jone
 ###################################
 
 # import UserBasedFiltering module
-from A72UserBasedFiltering import UserBasedFilteringRecommender
+from UserBasedFiltering import UserBasedFilteringRecommender
 
 print ()
 
-# pearson NN
-# Answer should match NN Slide 25 in User Based Recommendation Systems lecture
 ubf = UserBasedFilteringRecommender(songData)
 print ("------------------------------")
 print ("UBF NN Pearson Recommendations")
@@ -40,7 +34,7 @@ for user in songData.keys():
 print ()
 
 # pearson KNN with k=3
-# Answer should match KNN Slide 29 in User Based Recommendation Systems lecture
+
 ubf = UserBasedFilteringRecommender(songData, k=3)
 print ("-------------------------------------")
 print ("UBF KNN (k=3) Pearson Recommendations")
